@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Ikaria Method | Metabolic coaching for low energy and stubborn body fat</title>
+<meta name="description" content="The Ikaria Method clears the metabolic roadblocks behind low energy and stubborn body fat. A plan built from your intake, weekly coaching, recovery tracking and optional labs. $297 a month, month-to-month.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0D9488;--teal-d:#0A7A70;--mint:#E8F9F7;--cream:#FAF8F5;--sand:#F1ECE4;--ink:#1A1F1E;--night:#0F0F0F;--grey:#5E6664;--line:#E4DED4}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Sora,system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--cream);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.serif{font-family:Cormorant,Georgia,serif}
+h1,h2,h3{font-family:Cormorant,Georgia,serif;font-weight:500;line-height:1.05;margin:0;letter-spacing:-.01em}
+h1{font-size:clamp(46px,6.4vw,86px)}
+h2{font-size:clamp(38px,4.6vw,60px)}
+h3{font-size:28px}
+em{font-style:italic;color:var(--teal)}
+.kicker{font-size:12px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:var(--teal);margin-bottom:18px}
+.lede{font-size:19px;color:var(--grey);max-width:640px}
+section{padding:110px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:17px 30px;border-radius:999px;font-family:Sora,sans-serif;font-size:15px;font-weight:500;text-decoration:none;transition:transform .2s,background .2s,box-shadow .2s;cursor:pointer;border:0}
+.btn-teal{background:var(--teal);color:#fff;box-shadow:0 10px 30px -10px rgba(13,148,136,.6)}
+.btn-teal:hover{background:var(--teal-d);transform:translateY(-2px)}
+.btn-ghost{border:1px solid var(--ink);color:var(--ink);background:transparent}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink)}
+.btn-light:hover{transform:translateY(-2px)}
+.btn .arr{transition:transform .2s}.btn:hover .arr{transform:translateX(4px)}
+.micro{font-size:13px;color:var(--grey);margin-top:14px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:rgba(250,248,245,.92);backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
+nav.scrolled{border-color:var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:24px}
+nav .logo img{height:44px;width:auto}
+nav .links{display:flex;gap:30px;font-size:14px;font-weight:400}
+nav .links a{text-decoration:none;color:var(--grey);white-space:nowrap}
+nav .links a:hover{color:var(--ink)}
+nav .btn{padding:12px 22px;font-size:14px;white-space:nowrap}
+@media(max-width:1000px){nav .links{display:none}}
+
+/* hero */
+.hero{padding:70px 0 100px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;right:-220px;top:-160px;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(13,148,136,.16),rgba(13,148,136,0) 65%);pointer-events:none}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:64px;align-items:center;position:relative}
+.hero p.lede{margin:26px 0 34px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.trust{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:40px;font-size:13px;color:var(--grey)}
+.trust span:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--teal);margin-right:9px;vertical-align:middle}
+@media(max-width:960px){.hero .wrap{grid-template-columns:1fr}}
+
+/* week card mock */
+.mock{background:#fff;border:1px solid var(--line);border-radius:26px;padding:26px;box-shadow:0 40px 80px -40px rgba(26,31,30,.35);position:relative}
+.mock .top{display:flex;justify-content:space-between;align-items:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+.mock .top b{color:var(--teal);font-weight:500}
+.mock h4{font-family:Cormorant,serif;font-size:30px;font-weight:500;margin:10px 0 18px;line-height:1.1}
+.metrics{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.metric{background:var(--cream);border-radius:16px;padding:14px 16px}
+.metric .l{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--grey)}
+.metric .v{font-family:Cormorant,serif;font-size:34px;font-weight:600;line-height:1.1}
+.metric .d{font-size:12px;color:var(--teal);font-weight:500}
+.spark{height:34px;margin-top:6px}
+.todo{margin-top:16px;border-top:1px solid var(--line);padding-top:14px;font-size:14px}
+.todo div{display:flex;gap:10px;align-items:flex-start;margin:7px 0}
+.todo i{flex:0 0 18px;height:18px;border-radius:50%;background:var(--mint);color:var(--teal);font-style:normal;font-size:11px;display:grid;place-items:center;margin-top:3px}
+.mock .tag{position:absolute;left:-18px;top:-20px;background:var(--ink);color:#fff;font-size:13px;padding:10px 16px;border-radius:999px;box-shadow:0 12px 30px -12px rgba(0,0,0,.5)}
+.mock .tag b{color:#7FE3D8;font-weight:500}
+.mock .note{font-size:11px;color:#9aa19f;margin-top:12px;text-align:right}
+
+/* ticker */
+.ticker{background:var(--ink);color:#fff;overflow:hidden;padding:18px 0;white-space:nowrap}
+.ticker .row{display:inline-flex;gap:46px;animation:tick 38s linear infinite;font-family:Cormorant,serif;font-size:26px;font-style:italic}
+.ticker .row span:after{content:"·";margin-left:46px;color:var(--teal);font-style:normal}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* quiz */
+.quiz{background:var(--sand)}
+.quiz .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start}
+.checks{display:grid;gap:12px}
+.chk{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 22px;cursor:pointer;font-size:16px;transition:border-color .2s,background .2s,transform .15s;user-select:none;text-align:left;font-family:inherit;font-weight:300;color:var(--ink)}
+.chk:hover{transform:translateX(4px)}
+.chk .box{flex:0 0 26px;height:26px;border-radius:8px;border:1.5px solid #c9c2b6;display:grid;place-items:center;transition:all .2s;color:#fff;font-size:15px}
+.chk.on{border-color:var(--teal);background:var(--mint)}
+.chk.on .box{background:var(--teal);border-color:var(--teal)}
+.result{margin-top:26px;padding:24px 26px;border-radius:20px;background:var(--ink);color:#fff;display:none}
+.result.show{display:block;animation:pop .4s ease}
+.result p{margin:6px 0 18px;color:#cfd6d4}
+.result .count{font-family:Cormorant,serif;font-size:40px;line-height:1}
+@keyframes pop{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media(max-width:960px){.quiz .wrap{grid-template-columns:1fr}}
+
+/* why */
+.why .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:end}
+.why .big{font-family:Cormorant,serif;font-size:clamp(30px,3.4vw,44px);line-height:1.2}
+.shifts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:30px}
+.shift{border:1px solid var(--line);border-radius:16px;padding:16px 18px;font-size:14.5px;background:#fff}
+.shift b{display:block;font-weight:500;margin-bottom:3px}
+@media(max-width:960px){.why .wrap{grid-template-columns:1fr}}
+
+/* levers */
+.levers{background:var(--night);color:#fff}
+.levers .lede{color:#b9c1bf}
+.lgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:56px}
+.lever{border:1px solid rgba(255,255,255,.12);border-radius:22px;padding:28px 22px 30px;background:rgba(255,255,255,.03);transition:transform .25s,border-color .25s,background .25s;position:relative;overflow:hidden}
+.lever:hover{transform:translateY(-6px);border-color:var(--teal);background:rgba(13,148,136,.08)}
+.lever .n{font-family:Cormorant,serif;font-size:54px;line-height:1;color:var(--teal);font-style:italic}
+.lever h3{font-size:25px;margin:16px 0 10px;color:#fff}
+.lever p{font-size:14px;color:#b9c1bf;margin:0}
+@media(max-width:1080px){.lgrid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.lgrid{grid-template-columns:1fr}}
+
+/* how */
+.steps{margin-top:60px;position:relative;display:grid;gap:0}
+.step{display:grid;grid-template-columns:150px 70px 1fr;align-items:start;padding:26px 0;border-top:1px solid var(--line)}
+.step:last-child{border-bottom:1px solid var(--line)}
+.step .when{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:500;padding-top:8px}
+.step .dot{width:44px;height:44px;border-radius:50%;background:var(--mint);color:var(--teal);font-family:Cormorant,serif;font-size:24px;font-weight:600;display:grid;place-items:center}
+.step h3{font-size:30px;margin-bottom:6px}
+.step p{margin:0;color:var(--grey);max-width:640px}
+.step .opt{display:inline-block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;border:1px solid var(--teal);color:var(--teal);border-radius:999px;padding:3px 10px;margin-left:10px;vertical-align:middle;font-family:Sora}
+@media(max-width:760px){.step{grid-template-columns:56px 1fr}.step .when{grid-column:2;padding:0 0 6px}.step .dot{grid-row:1/3;grid-column:1}.step>div:last-child{grid-column:2}}
+
+/* pricing */
+.pricing{background:var(--mint)}
+.pricing .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.pcard{background:#fff;border-radius:30px;padding:44px;box-shadow:0 40px 80px -50px rgba(13,148,136,.55);border:1px solid #cdeee9}
+.price{display:flex;align-items:baseline;gap:8px;margin:6px 0 4px}
+.price .amt{font-family:Cormorant,serif;font-size:88px;font-weight:600;line-height:1}
+.price .per{color:var(--grey)}
+.inc{list-style:none;padding:0;margin:26px 0 30px;display:grid;gap:12px}
+.inc li{display:flex;gap:12px;font-size:15.5px}
+.inc li:before{content:"✓";flex:0 0 22px;height:22px;border-radius:50%;background:var(--teal);color:#fff;font-size:12px;display:grid;place-items:center;margin-top:2px}
+.extra{font-size:13.5px;color:var(--grey);border-top:1px solid var(--line);padding-top:18px;margin-top:22px}
+@media(max-width:960px){.pricing .wrap{grid-template-columns:1fr}}
+
+/* compare */
+.ctable{width:100%;border-collapse:separate;border-spacing:0;margin-top:50px;font-size:15px;background:#fff;border-radius:22px;overflow:hidden;border:1px solid var(--line)}
+.ctable th,.ctable td{padding:18px 20px;text-align:center;border-bottom:1px solid var(--line)}
+.ctable th{font-weight:500;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--grey);background:var(--cream)}
+.ctable td:first-child,.ctable th:first-child{text-align:left}
+.ctable tr:last-child td{border-bottom:0}
+.ctable .us{background:var(--mint);color:var(--teal);font-weight:500}
+.ctable th.us{color:var(--teal)}
+.y{color:var(--teal);font-size:18px}.n{color:#c4bdb1;font-size:18px}
+.tscroll{overflow-x:auto}
+.tscroll table{min-width:720px}
+
+/* bet */
+.bet{background:var(--night);color:#fff;text-align:center;position:relative;overflow:hidden}
+.bet:before{content:"";position:absolute;left:50%;top:50%;width:900px;height:900px;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(13,148,136,.25),transparent 60%)}
+.bet .wrap{position:relative}
+.trio{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;margin:44px 0}
+.trio div{border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:14px 26px;font-size:15px}
+.trio div b{color:#7FE3D8;font-weight:500}
+.bet .lede{color:#b9c1bf;margin:0 auto}
+.stamp{font-family:Cormorant,serif;font-style:italic;font-size:clamp(54px,8vw,110px);line-height:1;margin-top:30px;color:#fff}
+.stamp span{color:var(--teal)}
+
+/* coaches */
+.cgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:54px}
+.coach{display:flex;flex-direction:column;gap:22px;background:#fff;border:1px solid var(--line);border-radius:26px;padding:20px 20px 28px}
+.coach img{width:100%;height:340px;object-fit:cover;object-position:top;border-radius:18px;background:var(--sand)}
+.coach h3{font-size:32px}
+.coach .role{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin:4px 0 12px}
+.coach p{margin:0;font-size:15px;color:var(--grey)}
+@media(max-width:960px){.cgrid{grid-template-columns:1fr}}
+@media(max-width:560px){.coach img{height:320px}}
+
+/* fit */
+.fit .wrap>.cols{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:50px}
+.fitcol{border-radius:24px;padding:34px}
+.fitcol.yes{background:var(--ink);color:#fff}
+.fitcol.no{background:var(--sand)}
+.fitcol h3{margin-bottom:18px}
+.fitcol ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
+.fitcol li{display:flex;gap:12px;font-size:15.5px}
+.fitcol.yes li:before{content:"✓";color:#7FE3D8}
+.fitcol.no li:before{content:"–";color:var(--grey)}
+@media(max-width:860px){.fit .wrap>.cols{grid-template-columns:1fr}}
+
+/* outcomes */
+.ogrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:50px}
+.out{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}
+.out .when{font-family:Cormorant,serif;font-size:44px;line-height:1;color:var(--teal);font-style:italic}
+.out h3{font-size:24px;margin:10px 0 8px}
+.out p{margin:0;font-size:15px;color:var(--grey)}
+@media(max-width:860px){.ogrid{grid-template-columns:1fr}}
+
+/* faq */
+.faq .wrap{max-width:900px}
+details{border-bottom:1px solid var(--line);padding:22px 0}
+details:first-of-type{border-top:1px solid var(--line);margin-top:44px}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-family:Cormorant,serif;font-size:27px;font-weight:500}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";font-family:Sora;font-weight:300;font-size:26px;color:var(--teal);transition:transform .25s}
+details[open] summary:after{transform:rotate(45deg)}
+details p{color:var(--grey);margin:12px 0 0;max-width:760px}
+
+/* final */
+.final{background:var(--teal);color:#fff;text-align:center}
+.final h2{font-size:clamp(44px,6vw,78px)}
+.final p{color:#dff6f3;max-width:600px;margin:22px auto 34px}
+.final .ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.final .btn-ghost{border-color:#fff;color:#fff}.final .btn-ghost:hover{background:#fff;color:var(--teal)}
+
+
+/* photo band */
+.band{position:relative;min-height:560px;display:flex;align-items:flex-end;color:#fff;background:#0F0F0F;overflow:hidden}
+.band .art{position:absolute;inset:0;width:100%;height:100%}
+.pulse{stroke-dasharray:2400;stroke-dashoffset:2400;animation:pulse 5s ease-in-out infinite}
+@keyframes pulse{0%{stroke-dashoffset:2400}55%,100%{stroke-dashoffset:-2400}}
+.band:before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(15,15,15,0) 40%,rgba(15,15,15,.8) 100%)}
+.band .wrap{z-index:2}
+.band .wrap{position:relative;width:100%;padding-bottom:70px;display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap}
+.band h2{color:#fff;font-size:clamp(44px,6vw,84px);max-width:760px}
+.band p{max-width:380px;color:#dfe5e3;margin:0;font-size:16px}
+.whyimg{margin-top:36px;border-radius:24px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 60px -40px rgba(26,31,30,.35)}
+.chart{display:block;width:100%;height:auto}
+.draw{stroke-dasharray:900;stroke-dashoffset:900;transition:stroke-dashoffset 2.2s ease .3s}
+.reveal.in .draw,.whyimg.in .draw{stroke-dashoffset:0}
+.whyimg img{width:100%;height:100%;object-fit:cover;object-position:30% 30%;transition:transform 1.2s ease}
+.whyimg:hover img{transform:scale(1.04)}
+.whyimg span{position:absolute;left:18px;bottom:18px;background:rgba(250,248,245,.94);color:var(--ink);font-size:13px;padding:9px 15px;border-radius:999px}
+.lever .ic{width:46px;height:46px;border-radius:14px;background:rgba(13,148,136,.15);display:grid;place-items:center;margin-bottom:18px;transition:background .25s}
+.lever:hover .ic{background:var(--teal)}
+.lever .ic svg{width:24px;height:24px;stroke:#7FE3D8;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;transition:stroke .25s}
+.lever:hover .ic svg{stroke:#fff}
+
+footer{background:var(--night);color:#9aa19f;padding:70px 0 110px;font-size:14px}
+footer .top{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+footer img{height:70px;width:auto;margin-bottom:16px}
+footer h4{color:#fff;font-weight:500;font-size:13px;letter-spacing:.16em;text-transform:uppercase;margin:0 0 14px}
+footer a{display:block;text-decoration:none;margin:7px 0}
+footer a:hover{color:#fff}
+footer .disc{border-top:1px solid #2a2f2e;padding-top:26px;font-size:12.5px;line-height:1.7;max-width:900px}
+@media(max-width:860px){footer .top{grid-template-columns:1fr}}
+
+.mbar{display:none}
+@media(max-width:760px){
+ section{padding:80px 0}
+ .mbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:12px 16px;background:rgba(250,248,245,.96);backdrop-filter:blur(8px);border-top:1px solid var(--line);gap:10px}
+ .mbar a{flex:1;justify-content:center;padding:14px 10px;font-size:14px}
+ nav .btn{display:none}
+ .mock .tag{left:10px;top:-18px}
+ .metric .v{font-size:27px;white-space:nowrap}
+}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.ticker .row{animation:none}}
+
+/* quiz v2 */
+.qz{background:#fff;border:1px solid var(--line);border-radius:28px;padding:36px;box-shadow:0 40px 80px -50px rgba(26,31,30,.35);min-height:470px;display:flex;flex-direction:column}
+.qbar{height:6px;background:var(--sand);border-radius:9px;overflow:hidden;margin-bottom:26px}
+.qbar i{display:block;height:100%;width:0;background:var(--teal);border-radius:9px;transition:width .4s ease}
+.qmeta{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--grey);margin-bottom:10px}
+.qq{font-family:Cormorant,serif;font-size:clamp(28px,3vw,36px);font-weight:500;line-height:1.15;margin-bottom:22px}
+.qopts{display:grid;gap:10px}
+.qopt{text-align:left;font:inherit;font-weight:300;font-size:16px;background:var(--cream);border:1px solid var(--line);border-radius:16px;padding:16px 20px;cursor:pointer;transition:all .18s;color:var(--ink)}
+.qopt:hover{border-color:var(--teal);background:var(--mint);transform:translateX(4px)}
+.qstep{animation:pop .35s ease}
+.qback{margin-top:auto;padding-top:18px;font-size:13px;color:var(--grey);background:none;border:0;cursor:pointer;align-self:flex-start;font-family:inherit}
+.qres .big{font-family:Cormorant,serif;font-size:clamp(40px,4.6vw,58px);line-height:1;color:var(--teal);font-style:italic;margin:4px 0 14px}
+.qres p{color:var(--grey);margin:0 0 18px}
+.qres ul{list-style:none;padding:0;margin:0 0 24px;display:grid;gap:9px}
+.qres li{display:flex;gap:10px;font-size:15.5px}
+.qres li:before{content:"→";color:var(--teal)}
+.qres .ctas{display:flex;gap:10px;flex-wrap:wrap}
+.qres .btn{padding:14px 22px;font-size:14px}
+.qres .again{font-size:13px;color:var(--grey);background:none;border:0;cursor:pointer;margin-top:16px;font-family:inherit;text-decoration:underline}
+/* tour */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:44px 0 26px}
+.tab{font:inherit;font-size:14.5px;font-weight:400;padding:12px 20px;border-radius:999px;border:1px solid var(--line);background:#fff;cursor:pointer;color:var(--grey);transition:all .2s;display:flex;gap:9px;align-items:center}
+.tab b{font-family:Cormorant,serif;font-size:19px;font-weight:600;color:var(--teal)}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tab.on b{color:#7FE3D8}
+.pane{display:none;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:30px;padding:44px}
+.pane.on{display:grid;animation:pop .45s ease}
+.pane .when{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);font-weight:500}
+.pane h3{font-size:clamp(34px,3.4vw,46px);margin:10px 0 14px}
+.pane p{color:var(--grey);margin:0 0 18px;max-width:460px}
+.pane .pts{display:flex;gap:8px;flex-wrap:wrap}
+.pane .pts span{font-size:13px;background:var(--mint);color:var(--teal-d);padding:7px 13px;border-radius:999px}
+.screen{background:var(--cream);border-radius:22px;padding:24px;border:1px solid var(--line);min-height:330px}
+.screen .hd{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin-bottom:14px}
+.screen .row{display:flex;justify-content:space-between;align-items:center;background:#fff;border-radius:14px;padding:13px 16px;margin-bottom:9px;font-size:14px}
+.screen .row small{color:var(--grey);font-size:12px}
+.screen .pill{font-size:11px;background:var(--mint);color:var(--teal-d);border-radius:999px;padding:4px 10px;font-weight:500}
+.bars{display:flex;align-items:flex-end;gap:10px;height:150px;padding:10px 4px 0}
+.bars i{flex:1;background:linear-gradient(180deg,#2FD4C2,var(--teal));border-radius:8px 8px 3px 3px;height:0;transition:height 1s cubic-bezier(.2,.8,.2,1)}
+.pane.on .bars i{height:var(--h)}
+.bars+.lbl{display:flex;justify-content:space-between;font-size:11px;color:var(--grey);padding:8px 4px 0}
+.msg{background:#fff;border-radius:16px 16px 16px 4px;padding:14px 16px;font-size:14px;margin-bottom:10px;max-width:92%;box-shadow:0 8px 20px -14px rgba(0,0,0,.3)}
+.msg.me{background:var(--teal);color:#fff;border-radius:16px 16px 4px 16px;margin-left:auto}
+.msg b{font-weight:500}
+@media(max-width:700px){.tabs{flex-wrap:nowrap;overflow-x:auto;margin-left:-28px;margin-right:-28px;padding:0 28px 6px;scrollbar-width:none}.tab{flex:0 0 auto}}
+@media(max-width:900px){.pane{grid-template-columns:1fr;padding:26px;gap:28px}}
+.arc{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:30px;position:relative}
+.arc div{padding:22px 24px 0 0;border-top:2px solid var(--line);position:relative}
+.arc div:before{content:"";position:absolute;top:-2px;left:0;height:2px;width:0;background:var(--teal);transition:width 1.2s ease}
+.arc.in div:before{width:100%}
+.arc.in div:nth-child(2):before{transition-delay:.5s}.arc.in div:nth-child(3):before{transition-delay:1s}
+.arc b{font-family:Cormorant,serif;font-style:italic;font-size:30px;color:var(--teal);font-weight:500;display:block}
+.arc span{font-size:15px;color:var(--grey)}
+@media(max-width:700px){.arc{grid-template-columns:1fr}}
+.labsnote{margin-top:22px;font-size:14.5px;color:var(--grey)}
+.labsnote b{color:var(--ink);font-weight:500}
+.trio2{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.trio2 div{background:var(--ink);color:#fff;border-radius:999px;padding:12px 22px;font-size:14.5px}
+.trio2 b{color:#7FE3D8;font-weight:500}
+.final .stamp2{font-family:Cormorant,serif;font-style:italic;font-size:22px;color:#dff6f3;margin-bottom:10px;letter-spacing:.02em}
+
+/* proof strip */
+.proof{padding:46px 0;background:#fff;border-top:1px solid var(--line)}
+.proof .wrap{display:grid;grid-template-columns:auto 1fr auto 1fr auto;gap:22px 26px;align-items:center}
+.proof img{height:118px;width:auto;border-radius:6px;box-shadow:0 16px 30px -14px rgba(0,0,0,.45);transition:transform .3s}
+.proof img.pod{border-radius:12px;height:104px}
+.proof img:hover{transform:translateY(-4px) rotate(-1.5deg)}
+.proof .t .k{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal);font-weight:500}
+.proof .t b{display:block;font-family:Cormorant,serif;font-size:23px;font-weight:600;line-height:1.15;margin:4px 0 2px}
+.proof .t span{font-size:13.5px;color:var(--grey)}
+.proof .clients{border-left:1px solid var(--line);padding-left:28px}
+.proof .clients .row{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;max-width:250px}
+.proof .clients .row span{text-align:center;white-space:nowrap}
+.proof .clients .row span{font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--ink);font-weight:500}
+@media(max-width:1000px){.proof .wrap{grid-template-columns:auto 1fr}.proof .clients{grid-column:1/-1;border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:20px}}
+.phone{justify-self:center;width:min(340px,100%);border-radius:36px;padding:10px;background:#0F0F0F;box-shadow:0 40px 70px -35px rgba(13,148,136,.55),0 0 0 1px #2a2f2e}
+.phone img{width:100%;border-radius:28px;display:block}
+.shot{background:var(--cream);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 30px 60px -40px rgba(13,148,136,.5)}
+.shot .hd{display:flex;justify-content:space-between;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey);margin:2px 4px 12px}
+.shot img{width:100%;border-radius:14px;display:block;background:#fff}
+.phonewrap{justify-self:center;display:flex;flex-direction:column;align-items:center;gap:14px;width:100%}
+.plabel{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--grey)}
+</style>
+</head>
+<body>
+
+<nav id="nav"><div class="wrap">
+ <a class="logo" href="#top"><img src="assets/logo-black.png" alt="The Ikaria Method"></a>
+ <div class="links"><a href="#quiz">Take the quiz</a><a href="#how">How it works</a><a href="#pricing">Membership</a><a href="#coaches">Coaches</a><a href="#faq">FAQ</a></div>
+ <a class="btn btn-teal" href="https://docs.google.com/forms/d/e/1FAIpQLSe1sn8xOR38fgH6sOSrqTQMSphRn0ha3F10_8V-ZQ7F0iPXSg/viewform" target="_blank" rel="noopener">Start your intake</a>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+ <div>
+  <div class="kicker">Metabolic coaching for ages 35 to 60</div>
+  <h1>You're not lazy. You're not broken. <em>You're running on the wrong plan.</em></h1>
+  <p class="lede">Whether you're training five days a week or haven't started yet, we find what's holding your energy and body fat back, then fix it with a plan built for you and a coach every week.</p>
+  <div class="ctas">
+   <a class="btn btn-teal" href="#quiz">Find your roadblock <span class="arr">→</span></a>
+   <a class="btn btn-ghost" href="https://docs.google.com/forms/d/e/1FAIpQLSe1sn8xOR38fgH6sOSrqTQMSphRn0ha3F10_8V-ZQ7F0iPXSg/viewform" target="_blank" rel="noopener">Start your intake</a>
+  </div>
+  <div class="micro">60-second quiz. $297 a month, month-to-month.</div>
+ </div>
+ <div class="reveal"><div class="mock">
+   <div class="top"><span>Weekly check-in</span><b>Week 6</b></div>
+   <h4>Recovery is climbing. Time to push the main lift.</h4>
+   <div class="metrics">
+    <div class="metric"><div class="l">Sleep</div><div class="v"><span class="cnt" data-to="7.53" data-fmt="hm">0</span></div><div class="d">↑ 48 min since week 1</div></div>
+    <div class="metric"><div class="l">HRV</div><div class="v"><span class="cnt" data-to="54">0</span> ms</div><div class="d">↑ trending up</div></div>
+    <div class="metric"><div class="l">Resting HR</div><div class="v"><span class="cnt" data-to="57">0</span></div><div class="d">↓ 5 bpm</div></div>
+    <div class="metric"><div class="l">Waist</div><div class="v">−1.5"</div><div class="d">since you started</div></div>
+   </div>
+   <div class="todo">
+    <div><i>✓</i>Protein at every meal, 6 of 7 days</div>
+    <div><i>✓</i>Lights out by 10:30 on weeknights</div>
+    <div><i>→</i>This week: add one zone 2 walk after dinner</div>
+   </div>
+   <div class="note">Illustrative example</div>
+   <div class="tag">Your coach reads this <b>every week</b></div>
+  </div></div>
+</div></header>
+
+<section class="proof"><div class="wrap">
+ <img src="assets/book.jpg" alt="The Stark Naked 21-Day Metabolic Reset by Brad Davidson" class="reveal">
+ <div class="t reveal"><div class="k">The book</div><b>The Stark Naked 21-Day Metabolic Reset</b><span>Brad Davidson · HarperOne</span></div>
+ <img src="assets/podcast.jpg" alt="Your Ultimate Comeback podcast with Brad and Raquel" class="pod reveal">
+ <div class="t reveal"><div class="k">The podcast</div><b>Your Ultimate Comeback</b><span>With Brad and Raquel · Apple, Spotify, YouTube</span></div>
+ <div class="t clients reveal"><div class="k">Trusted by athletes from</div><div class="row"><span>NFL</span><span>MLB</span><span>PGA</span><span>LIV Golf</span><span>NCAA</span></div></div>
+</div></section>
+
+<div class="ticker"><div class="row">
+ <span>Fewer levers, not more</span><span>Built from your intake</span><span>Coached every week</span><span>Monitoring in</span><span>Exit plan in</span><span>Refuse to fade</span>
+ <span>Fewer levers, not more</span><span>Built from your intake</span><span>Coached every week</span><span>Monitoring in</span><span>Exit plan in</span><span>Refuse to fade</span>
+</div></div>
+
+<section class="quiz" id="quiz"><div class="wrap">
+ <div class="reveal">
+  <div class="kicker">60-second quiz</div>
+  <h2>What's <em>really</em> holding you back?</h2>
+  <p class="lede" style="margin-top:22px">Five quick questions. You'll get your most likely roadblock and what we'd do about it first.</p>
+ </div>
+ <div class="qz reveal" id="qz"></div>
+</div></section>
+
+<section class="why"><div class="wrap">
+ <div class="reveal">
+  <div class="kicker">Why more isn't the answer</div>
+  <h2>Doing more <em>isn't the answer.</em></h2>
+  <div class="whyimg reveal"><svg class="chart" viewBox="0 0 560 440" aria-label="Effort keeps rising while results flatten and slip">
+<rect width="560" height="440" rx="24" fill="#fff"/>
+<g stroke="#EEE8DF" stroke-width="1"><line x1="40" x2="520" y1="80" y2="80"/><line x1="40" x2="520" y1="155" y2="155"/><line x1="40" x2="520" y1="230" y2="230"/><line x1="40" x2="520" y1="305" y2="305"/><line x1="40" x2="520" y1="380" y2="380"/></g>
+<path d="M40.0,380.0 L49.6,373.8 L59.2,367.6 L68.8,361.4 L78.4,355.2 L88.0,349.0 L97.6,342.8 L107.2,336.6 L116.8,330.4 L126.4,324.2 L136.0,318.0 L145.6,311.8 L155.2,305.6 L164.8,299.4 L174.4,293.2 L184.0,287.0 L193.6,280.8 L203.2,274.6 L212.8,268.4 L222.4,262.2 L232.0,256.0 L241.6,249.8 L251.2,243.6 L260.8,237.4 L270.4,231.2 L280.0,225.0 L289.6,218.8 L299.2,212.6 L308.8,206.4 L318.4,200.2 L328.0,194.0 L337.6,187.8 L347.2,181.6 L356.8,175.4 L366.4,169.2 L376.0,163.0 L385.6,156.8 L395.2,150.6 L404.8,144.4 L414.4,138.2 L424.0,132.0 L433.6,125.8 L443.2,119.6 L452.8,113.4 L462.4,107.2 L472.0,101.0 L481.6,94.8 L491.2,88.6 L500.8,82.4 L510.4,76.2 L520.0,70.0" fill="none" stroke="#1A1F1E" stroke-width="2.5" stroke-dasharray="6 6"/>
+<path class="draw" d="M40.0,380.0 L49.6,364.2 L59.2,350.1 L68.8,337.5 L78.4,326.2 L88.0,316.1 L97.6,307.0 L107.2,298.9 L116.8,291.7 L126.4,285.2 L136.0,279.4 L145.6,274.2 L155.2,269.5 L164.8,265.4 L174.4,261.7 L184.0,258.3 L193.6,255.4 L203.2,252.7 L212.8,250.3 L222.4,248.2 L232.0,246.3 L241.6,244.5 L251.2,243.0 L260.8,242.5 L270.4,243.1 L280.0,243.8 L289.6,244.6 L299.2,245.6 L308.8,246.6 L318.4,247.7 L328.0,248.9 L337.6,250.1 L347.2,251.4 L356.8,252.7 L366.4,254.1 L376.0,255.6 L385.6,257.0 L395.2,258.6 L404.8,260.1 L414.4,261.7 L424.0,263.3 L433.6,264.9 L443.2,266.5 L452.8,268.2 L462.4,269.8 L472.0,271.5 L481.6,273.2 L491.2,274.9 L500.8,276.6 L510.4,278.3 L520.0,280.1" fill="none" stroke="#0D9488" stroke-width="4" stroke-linecap="round"/>
+<text x="516" y="68" text-anchor="end" font-family="Sora,sans-serif" font-size="14" fill="#1A1F1E">Effort</text>
+<text x="516" y="236" text-anchor="end" font-family="Sora,sans-serif" font-size="14" fill="#0D9488" font-weight="500">Results</text>
+<text x="40" y="414" font-family="Sora,sans-serif" font-size="12" fill="#8a918f" letter-spacing="1.5">STRICTER DIETS · MORE WORKOUTS · MORE STRESS →</text>
+<circle cx="251.2" cy="243.0" r="7" fill="#0D9488"/>
+<text x="251.2" y="223.0" text-anchor="middle" font-family="Cormorant,serif" font-style="italic" font-size="22" fill="#0D9488">the wall</text>
+</svg></div>
+ </div>
+ <div class="reveal">
+  <p class="big">Between 35 and 55 the machinery shifts. More workouts, stricter diets and more willpower just add stress to a body that's already stretched thin.</p>
+  <div class="shifts">
+   <div class="shift"><b>Hormones drift</b>Energy and drive follow.</div>
+   <div class="shift"><b>Sleep gets lighter</b>Recovery slows with it.</div>
+   <div class="shift"><b>Stress stacks up</b>Work, life and training share one budget.</div>
+   <div class="shift"><b>Fuel use changes</b>The same diet stops working.</div>
+  </div>
+ </div>
+</div></section>
+
+<section class="band" style="padding:0"><svg class="art" viewBox="0 0 1600 640" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<defs><linearGradient id="lg" x1="0" x2="1"><stop offset="0" stop-color="#0D9488" stop-opacity="0"/><stop offset=".45" stop-color="#2FD4C2"/><stop offset="1" stop-color="#0D9488" stop-opacity=".2"/></linearGradient>
+<radialGradient id="rg" cx=".7" cy=".35" r=".5"><stop offset="0" stop-color="#0D9488" stop-opacity=".55"/><stop offset="1" stop-color="#0D9488" stop-opacity="0"/></radialGradient>
+<linearGradient id="hbg" x1="0" x2="1"><stop offset="0" stop-color="#7FE3D8" stop-opacity="0"/><stop offset=".5" stop-color="#7FE3D8"/><stop offset="1" stop-color="#7FE3D8" stop-opacity="0"/></linearGradient></defs>
+<rect width="1600" height="640" fill="#0F0F0F"/><rect width="1600" height="640" fill="url(#rg)"/>
+<polyline points="0,180.0 20,187.0 40,193.9 60,200.3 80,206.1 100,211.1 120,215.3 140,218.5 160,220.7 180,221.9 200,222.1 220,221.5 240,220.1 260,218.2 280,215.8 300,213.1 320,210.5 340,207.9 360,205.7 380,203.9 400,202.6 420,202.0 440,202.0 460,202.6 480,203.9 500,205.6 520,207.7 540,210.0 560,212.3 580,214.5 600,216.4 620,217.7 640,218.4 660,218.3 680,217.3 700,215.3 720,212.4 740,208.4 760,203.6 780,198.0 800,191.8 820,185.1 840,178.1 860,171.0 880,164.2 900,157.6 920,151.7 940,146.4 960,142.0 980,138.6 1000,136.2 1020,134.8 1040,134.5 1060,135.0 1080,136.4 1100,138.5 1120,141.0 1140,143.9 1160,147.0 1180,149.9 1200,152.7 1220,155.0 1240,156.9 1260,158.2 1280,158.8 1300,158.8 1320,158.2 1340,157.0 1360,155.4 1380,153.5 1400,151.4 1420,149.5 1440,147.7 1460,146.4 1480,145.6 1500,145.6 1520,146.4 1540,148.2 1560,150.9 1580,154.5 1600,159.0" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.06"/><polyline points="0,223.4 20,229.4 40,234.6 60,238.9 80,242.1 100,244.3 120,245.5 140,245.6 160,244.9 180,243.4 200,241.3 220,238.8 240,236.0 260,233.1 280,230.4 300,227.9 320,225.8 340,224.3 360,223.4 380,223.1 400,223.4 420,224.2 440,225.5 460,227.1 480,228.8 500,230.6 520,232.2 540,233.4 560,234.1 580,234.1 600,233.3 620,231.6 640,228.9 660,225.2 680,220.6 700,215.2 720,209.0 740,202.2 760,194.9 780,187.5 800,180.1 820,172.9 840,166.2 860,160.0 880,154.7 900,150.2 920,146.8 940,144.4 960,143.2 980,142.9 1000,143.7 1020,145.2 1040,147.5 1060,150.3 1080,153.4 1100,156.7 1120,159.9 1140,162.9 1160,165.6 1180,167.8 1200,169.4 1220,170.4 1240,170.7 1260,170.5 1280,169.8 1300,168.7 1320,167.3 1340,165.8 1360,164.4 1380,163.3 1400,162.6 1420,162.6 1440,163.2 1460,164.8 1480,167.2 1500,170.6 1520,174.9 1540,180.0 1560,186.0 1580,192.5 1600,199.5" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.07"/><polyline points="0,263.2 20,266.4 40,268.5 60,269.5 80,269.5 100,268.6 120,266.9 140,264.5 160,261.7 180,258.6 200,255.4 220,252.3 240,249.6 260,247.2 280,245.3 300,243.9 320,243.2 340,243.0 360,243.4 380,244.1 400,245.2 420,246.4 440,247.5 460,248.5 480,249.0 500,249.0 520,248.3 540,246.7 560,244.3 580,240.9 600,236.5 620,231.3 640,225.2 660,218.4 680,211.1 700,203.5 720,195.7 740,188.0 760,180.6 780,173.7 800,167.5 820,162.1 840,157.7 860,154.4 880,152.2 900,151.1 920,151.2 940,152.1 960,154.0 980,156.6 1000,159.7 1020,163.2 1040,166.8 1060,170.4 1080,173.8 1100,176.9 1120,179.5 1140,181.5 1160,183.0 1180,183.8 1200,184.1 1220,183.9 1240,183.3 1260,182.5 1280,181.7 1300,180.9 1320,180.5 1340,180.5 1360,181.1 1380,182.5 1400,184.7 1420,187.8 1440,191.8 1460,196.7 1480,202.5 1500,208.9 1520,215.9 1540,223.4 1560,231.0 1580,238.5 1600,245.9" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.08"/><polyline points="0,293.8 20,293.5 40,292.3 60,290.2 80,287.4 100,284.2 120,280.7 140,277.1 160,273.7 180,270.4 200,267.6 220,265.2 240,263.4 260,262.2 280,261.5 300,261.2 320,261.4 340,261.9 360,262.4 380,262.9 400,263.1 420,263.0 440,262.2 460,260.8 480,258.5 500,255.4 520,251.3 540,246.3 560,240.5 580,233.8 600,226.6 620,218.8 640,210.8 660,202.8 680,194.9 700,187.3 720,180.4 740,174.2 760,168.9 780,164.7 800,161.7 820,159.8 840,159.0 860,159.4 880,160.8 900,163.1 920,166.1 940,169.7 960,173.6 980,177.7 1000,181.8 1020,185.7 1040,189.2 1060,192.3 1080,194.9 1100,196.8 1120,198.2 1140,199.0 1160,199.4 1180,199.4 1200,199.3 1220,199.1 1240,199.0 1260,199.2 1280,199.9 1300,201.2 1320,203.3 1340,206.2 1360,209.9 1380,214.5 1400,220.0 1420,226.3 1440,233.2 1460,240.6 1480,248.3 1500,256.1 1520,263.9 1540,271.3 1560,278.2 1580,284.3 1600,289.6" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.12"/><polyline points="0,313.1 20,309.9 40,306.1 60,302.1 80,298.0 100,294.0 120,290.2 140,286.9 160,283.9 180,281.6 200,279.7 220,278.4 240,277.6 260,277.2 280,276.9 300,276.8 320,276.6 340,276.1 360,275.3 380,273.8 400,271.7 420,268.7 440,264.9 460,260.2 480,254.6 500,248.2 520,241.1 540,233.5 560,225.4 580,217.2 600,208.9 620,200.9 640,193.4 660,186.5 680,180.5 700,175.5 720,171.6 740,168.8 760,167.3 780,167.1 800,167.9 820,169.8 840,172.7 860,176.2 880,180.4 900,184.9 920,189.6 940,194.2 960,198.7 980,202.8 1000,206.4 1020,209.6 1040,212.1 1060,214.1 1080,215.5 1100,216.5 1120,217.2 1140,217.7 1160,218.2 1180,218.7 1200,219.6 1220,221.0 1240,223.0 1260,225.7 1280,229.1 1300,233.5 1320,238.6 1340,244.6 1360,251.3 1380,258.5 1400,266.2 1420,274.2 1440,282.1 1460,289.9 1480,297.2 1500,304.0 1520,309.9 1540,314.9 1560,318.8 1580,321.5 1600,322.9" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.16"/><polyline points="0,322.6 20,317.8 40,313.2 60,308.8 80,304.8 100,301.3 120,298.2 140,295.8 160,293.8 180,292.4 200,291.2 220,290.3 240,289.5 260,288.6 280,287.5 300,285.9 320,283.8 340,281.0 360,277.4 380,273.0 400,267.7 420,261.6 440,254.8 460,247.3 480,239.3 500,231.0 520,222.6 540,214.3 560,206.4 580,199.0 600,192.3 620,186.6 640,181.9 660,178.4 680,176.2 700,175.2 720,175.5 740,177.0 760,179.6 780,183.0 800,187.3 820,192.1 840,197.3 860,202.6 880,207.9 900,213.0 920,217.8 940,222.1 960,225.8 980,229.0 1000,231.6 1020,233.7 1040,235.3 1060,236.7 1080,237.8 1100,238.9 1120,240.1 1140,241.7 1160,243.7 1180,246.2 1200,249.5 1220,253.5 1240,258.4 1260,264.0 1280,270.3 1300,277.3 1320,284.9 1340,292.7 1360,300.7 1380,308.7 1400,316.3 1420,323.5 1440,330.0 1460,335.6 1480,340.2 1500,343.5 1520,345.7 1540,346.5 1560,346.1 1580,344.5 1600,341.7" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.21"/><polyline points="0,325.9 20,321.2 40,317.0 60,313.3 80,310.2 100,307.5 120,305.4 140,303.6 160,302.0 180,300.5 200,298.9 220,297.1 240,294.9 260,292.1 280,288.7 300,284.6 320,279.6 340,273.9 360,267.4 380,260.2 400,252.4 420,244.3 440,235.9 460,227.5 480,219.3 500,211.5 520,204.4 540,198.0 560,192.7 580,188.6 600,185.7 620,184.0 640,183.8 660,184.7 680,187.0 700,190.2 720,194.5 740,199.5 760,205.0 780,211.0 800,217.0 820,223.1 840,228.9 860,234.3 880,239.3 900,243.8 920,247.6 940,250.9 960,253.6 980,255.9 1000,257.8 1020,259.6 1040,261.3 1060,263.1 1080,265.3 1100,267.8 1120,270.9 1140,274.7 1160,279.2 1180,284.4 1200,290.4 1220,297.1 1240,304.3 1260,311.9 1280,319.8 1300,327.7 1320,335.5 1340,343.0 1360,349.8 1380,355.9 1400,361.0 1420,365.0 1440,367.8 1460,369.3 1480,369.4 1500,368.2 1520,365.8 1540,362.2 1560,357.7 1580,352.3 1600,346.2" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.28"/><polyline points="0,326.6 20,322.8 40,319.5 60,316.6 80,314.2 100,311.9 120,309.8 140,307.6 160,305.2 180,302.4 200,299.0 220,295.1 240,290.4 260,285.1 280,279.0 300,272.2 320,264.7 340,256.8 360,248.6 380,240.3 400,232.0 420,224.0 440,216.6 460,209.8 480,204.0 500,199.2 520,195.7 540,193.5 560,192.6 580,193.1 600,194.9 620,198.0 640,202.1 660,207.2 680,213.1 700,219.5 720,226.2 740,233.1 760,239.9 780,246.5 800,252.7 820,258.3 840,263.5 860,268.0 880,271.9 900,275.2 920,278.1 940,280.7 960,283.0 980,285.3 1000,287.7 1020,290.3 1040,293.4 1060,296.9 1080,301.1 1100,306.0 1120,311.5 1140,317.7 1160,324.5 1180,331.8 1200,339.4 1220,347.2 1240,355.0 1260,362.5 1280,369.5 1300,375.9 1320,381.5 1340,386.0 1360,389.3 1380,391.3 1400,392.0 1420,391.3 1440,389.2 1460,385.9 1480,381.5 1500,376.0 1520,369.7 1540,362.8 1560,355.5 1580,348.1 1600,340.6" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.36"/><polyline points="0,326.1 20,323.0 40,320.2 60,317.4 80,314.7 100,311.7 120,308.4 140,304.6 160,300.2 180,295.2 200,289.5 220,283.1 240,276.2 260,268.6 280,260.7 300,252.6 320,244.5 340,236.5 360,228.8 380,221.8 400,215.6 420,210.4 440,206.4 460,203.6 480,202.2 500,202.2 520,203.6 540,206.4 560,210.4 580,215.4 600,221.5 620,228.2 640,235.5 660,243.1 680,250.9 700,258.5 720,265.8 740,272.8 760,279.2 780,285.0 800,290.1 820,294.7 840,298.6 860,302.1 880,305.2 900,308.0 920,310.8 940,313.7 960,316.7 980,320.2 1000,324.1 1020,328.5 1040,333.6 1060,339.3 1080,345.6 1100,352.4 1120,359.6 1140,367.1 1160,374.7 1180,382.1 1200,389.2 1220,395.7 1240,401.5 1260,406.4 1280,410.1 1300,412.6 1320,413.8 1340,413.5 1360,411.9 1380,408.9 1400,404.6 1420,399.2 1440,392.7 1460,385.5 1480,377.7 1500,369.5 1520,361.2 1540,352.9 1560,344.9 1580,337.3 1600,330.2" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.46"/><polyline points="0,323.5 20,320.3 40,316.8 60,313.1 80,308.9 100,304.3 120,299.0 140,293.1 160,286.6 180,279.6 200,272.2 220,264.4 240,256.5 260,248.7 280,241.1 300,234.0 320,227.6 340,222.1 360,217.7 380,214.5 400,212.6 420,212.1 440,213.1 460,215.5 480,219.3 500,224.3 520,230.4 540,237.4 560,245.2 580,253.4 600,261.9 620,270.5 640,279.0 660,287.1 680,294.8 700,301.9 720,308.3 740,314.1 760,319.2 780,323.7 800,327.6 820,331.2 840,334.5 860,337.7 880,340.9 900,344.3 920,348.0 940,352.1 960,356.7 980,361.9 1000,367.6 1020,373.9 1040,380.6 1060,387.6 1080,394.7 1100,401.9 1120,408.8 1140,415.4 1160,421.2 1180,426.3 1200,430.3 1220,433.2 1240,434.8 1260,434.9 1280,433.7 1300,431.0 1320,426.9 1340,421.6 1360,415.1 1380,407.7 1400,399.5 1420,390.7 1440,381.7 1460,372.5 1480,363.4 1500,354.6 1520,346.3 1540,338.6 1560,331.6 1580,325.2 1600,319.7" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.56"/><polyline points="0,316.7 20,312.4 40,307.5 60,302.1 80,296.2 100,289.8 120,282.9 140,275.6 160,268.1 180,260.6 200,253.3 220,246.3 240,239.8 260,234.2 280,229.5 300,226.0 320,223.7 340,222.9 360,223.5 380,225.5 400,229.1 420,233.9 440,240.0 460,247.2 480,255.3 500,264.0 520,273.2 540,282.7 560,292.1 580,301.4 600,310.3 620,318.6 640,326.4 660,333.4 680,339.7 700,345.4 720,350.3 740,354.7 760,358.6 780,362.3 800,365.7 820,369.2 840,372.7 860,376.6 880,380.8 900,385.4 920,390.6 940,396.2 960,402.2 980,408.6 1000,415.3 1020,422.0 1040,428.6 1060,434.9 1080,440.7 1100,445.8 1120,450.0 1140,453.1 1160,454.9 1180,455.4 1200,454.5 1220,452.2 1240,448.4 1260,443.2 1280,436.8 1300,429.2 1320,420.7 1340,411.5 1360,401.8 1380,391.8 1400,381.8 1420,371.9 1440,362.4 1460,353.5 1480,345.2 1500,337.6 1520,330.8 1540,324.8 1560,319.6 1580,315.0 1600,311.0" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.46"/><polyline points="0,304.8 20,299.0 40,292.8 60,286.1 80,279.2 100,272.2 120,265.3 140,258.5 160,252.3 180,246.6 200,241.9 220,238.1 240,235.6 260,234.5 280,234.7 300,236.5 320,239.7 340,244.4 360,250.4 380,257.7 400,265.9 420,275.1 440,284.9 460,295.0 480,305.4 500,315.7 520,325.7 540,335.3 560,344.4 580,352.7 600,360.3 620,367.0 640,373.1 660,378.4 680,383.1 700,387.3 720,391.1 740,394.7 760,398.3 780,401.9 800,405.7 820,409.9 840,414.4 860,419.3 880,424.7 900,430.4 920,436.3 940,442.4 960,448.5 980,454.5 1000,460.0 1020,464.9 1040,469.1 1060,472.3 1080,474.3 1100,475.1 1120,474.5 1140,472.4 1160,468.8 1180,463.9 1200,457.5 1220,449.9 1240,441.3 1260,431.7 1280,421.5 1300,410.9 1320,400.0 1340,389.2 1360,378.6 1380,368.4 1400,358.9 1420,350.0 1440,342.0 1460,334.9 1480,328.5 1500,323.0 1520,318.3 1540,314.1 1560,310.5 1580,307.2 1600,304.1" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.36"/><polyline points="0,289.8 20,283.4 40,277.0 60,270.7 80,264.8 100,259.4 120,254.7 140,250.9 160,248.3 180,246.9 200,246.9 220,248.4 240,251.4 260,255.8 280,261.7 300,268.9 320,277.4 340,286.8 360,297.0 380,307.8 400,318.9 420,330.1 440,341.2 460,352.0 480,362.3 500,371.8 520,380.7 540,388.7 560,395.8 580,402.2 600,407.7 620,412.6 640,416.9 660,420.8 680,424.4 700,427.9 720,431.5 740,435.1 760,439.1 780,443.3 800,447.9 820,452.8 840,457.9 860,463.3 880,468.8 900,474.1 920,479.2 940,483.8 960,487.8 980,490.9 1000,493.0 1020,493.9 1040,493.5 1060,491.6 1080,488.3 1100,483.5 1120,477.3 1140,469.8 1160,461.0 1180,451.3 1200,440.7 1220,429.5 1240,417.9 1260,406.2 1280,394.7 1300,383.4 1320,372.7 1340,362.6 1360,353.4 1380,345.0 1400,337.6 1420,331.0 1440,325.4 1460,320.6 1480,316.4 1500,312.8 1520,309.6 1540,306.6 1560,303.8 1580,300.9 1600,297.8" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.28"/><polyline points="0,277.3 20,272.3 40,267.9 60,264.2 80,261.6 100,260.2 120,260.0 140,261.3 160,264.0 180,268.3 200,274.0 220,281.2 240,289.6 260,299.2 280,309.7 300,321.0 320,332.8 340,344.8 360,356.9 380,368.7 400,380.1 420,390.9 440,401.0 460,410.2 480,418.5 500,425.9 520,432.4 540,438.0 560,443.0 580,447.3 600,451.1 620,454.6 640,457.9 660,461.1 680,464.5 700,468.0 720,471.8 740,475.9 760,480.2 780,484.7 800,489.3 820,493.9 840,498.4 860,502.5 880,506.1 900,509.0 920,511.0 940,511.9 960,511.5 980,509.8 1000,506.7 1020,502.1 1040,496.1 1060,488.6 1080,479.9 1100,470.0 1120,459.2 1140,447.6 1160,435.4 1180,423.0 1200,410.6 1220,398.3 1240,386.5 1260,375.3 1280,364.8 1300,355.3 1320,346.7 1340,339.1 1360,332.5 1380,326.9 1400,322.1 1420,318.1 1440,314.7 1460,311.8 1480,309.1 1500,306.6 1520,304.2 1540,301.6 1560,298.9 1580,295.9 1600,292.7" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.21"/><polyline points="0,275.6 20,274.2 40,274.0 60,275.2 80,277.7 100,281.8 120,287.4 140,294.4 160,302.8 180,312.5 200,323.2 220,334.9 240,347.1 260,359.8 280,372.7 300,385.5 320,397.9 340,409.9 360,421.2 380,431.6 400,441.1 420,449.6 440,457.1 460,463.6 480,469.2 500,474.0 520,478.1 540,481.6 560,484.8 580,487.8 600,490.6 620,493.5 640,496.5 660,499.6 680,503.0 700,506.6 720,510.3 740,514.0 760,517.7 780,521.1 800,524.2 820,526.6 840,528.3 860,529.0 880,528.7 900,527.0 920,524.0 940,519.6 960,513.7 980,506.4 1000,497.7 1020,487.8 1040,476.8 1060,464.9 1080,452.4 1100,439.4 1120,426.2 1140,413.1 1160,400.3 1180,388.0 1200,376.4 1220,365.7 1240,356.0 1260,347.3 1280,339.8 1300,333.3 1320,327.8 1340,323.3 1360,319.6 1380,316.5 1400,314.0 1420,311.8 1440,309.9 1460,308.0 1480,306.1 1500,304.0 1520,301.8 1540,299.5 1560,296.9 1580,294.3 1600,291.8" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.16"/><polyline points="0,292.5 20,296.5 40,301.9 60,308.8 80,317.1 100,326.8 120,337.6 140,349.5 160,362.1 180,375.3 200,388.9 220,402.5 240,415.9 260,428.9 280,441.3 300,452.8 320,463.5 340,473.1 360,481.6 380,489.0 400,495.4 420,500.8 440,505.3 460,509.0 480,512.2 500,514.9 520,517.3 540,519.5 560,521.8 580,524.0 600,526.4 620,529.0 640,531.7 660,534.4 680,537.2 700,539.8 720,542.1 740,543.9 760,545.1 780,545.6 800,545.0 820,543.3 840,540.3 860,535.9 880,530.2 900,523.0 920,514.4 940,504.6 960,493.5 980,481.5 1000,468.6 1020,455.2 1040,441.4 1060,427.6 1080,414.0 1100,400.7 1120,388.1 1140,376.3 1160,365.5 1180,355.8 1200,347.2 1220,339.8 1240,333.6 1260,328.5 1280,324.4 1300,321.1 1320,318.6 1340,316.7 1360,315.1 1380,313.9 1400,312.7 1420,311.6 1440,310.4 1460,309.1 1480,307.7 1500,306.1 1520,304.6 1540,303.1 1560,301.9 1580,301.0 1600,300.6" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.12"/><polyline points="0,332.5 20,342.1 40,353.0 60,365.0 80,377.9 100,391.5 120,405.5 140,419.8 160,434.0 180,447.9 200,461.3 220,473.9 240,485.7 260,496.3 280,505.9 300,514.3 320,521.5 340,527.5 360,532.5 380,536.6 400,539.8 420,542.4 440,544.4 460,546.1 480,547.6 500,549.0 520,550.4 540,551.9 560,553.5 580,555.2 600,556.8 620,558.4 640,559.9 660,560.9 680,561.5 700,561.4 720,560.5 740,558.6 760,555.5 780,551.2 800,545.5 820,538.4 840,530.0 860,520.2 880,509.2 900,497.1 920,484.1 940,470.4 960,456.2 980,441.8 1000,427.4 1020,413.4 1040,399.8 1060,387.1 1080,375.2 1100,364.5 1120,354.9 1140,346.6 1160,339.6 1180,333.8 1200,329.2 1220,325.6 1240,323.0 1260,321.2 1280,320.0 1300,319.3 1320,318.9 1340,318.7 1360,318.5 1380,318.3 1400,318.0 1420,317.6 1440,317.2 1460,316.8 1480,316.5 1500,316.5 1520,316.9 1540,317.8 1560,319.5 1580,322.0 1600,325.6" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.08"/><polyline points="0,394.4 20,408.3 40,422.7 60,437.5 80,452.4 100,467.0 120,481.3 140,494.9 160,507.7 180,519.4 200,530.0 220,539.3 240,547.4 260,554.1 280,559.7 300,564.1 320,567.5 340,570.0 360,571.8 380,573.1 400,573.9 420,574.5 440,574.9 460,575.4 480,575.8 500,576.3 520,576.8 540,577.2 560,577.6 580,577.8 600,577.6 620,576.8 640,575.4 660,573.1 680,569.8 700,565.4 720,559.7 740,552.7 760,544.4 780,534.7 800,523.8 820,511.7 840,498.7 860,484.8 880,470.3 900,455.5 920,440.6 940,425.9 960,411.6 980,397.9 1000,385.1 1020,373.4 1040,362.9 1060,353.7 1080,345.8 1100,339.3 1120,334.2 1140,330.3 1160,327.5 1180,325.7 1200,324.7 1220,324.5 1240,324.7 1260,325.3 1280,326.1 1300,327.0 1320,327.9 1340,328.8 1360,329.6 1380,330.4 1400,331.2 1420,332.2 1440,333.5 1460,335.2 1480,337.4 1500,340.4 1520,344.3 1540,349.2 1560,355.2 1580,362.4 1600,370.9" fill="none" stroke="url(#lg)" stroke-width="1.3" opacity="0.07"/>
+<path class="pulse" d="M0,470 L620,470 L660,470 L690,400 L720,560 L760,300 L800,620 L840,380 L870,500 L900,470 L1600,470" fill="none" stroke="url(#hbg)" stroke-width="3" stroke-linejoin="round"/>
+</svg><div class="wrap">
+ <h2 class="reveal">Smarter training. <em style="color:#7FE3D8">Not more training.</em></h2>
+ <p class="reveal">Your coach sets the right dose for the body you have now, then adjusts it every week based on how you're actually recovering.</p>
+</div></section>
+
+<section class="levers" id="levers"><div class="wrap">
+ <div class="reveal">
+  <div class="kicker">What we actually do</div>
+  <h2 style="color:#fff">Five levers. Pulled in the <em>right order.</em></h2>
+ </div>
+ <div class="lgrid">
+  <div class="lever reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M6.5 6.5v11M17.5 6.5v11M3.5 9v6M20.5 9v6M6.5 12h11"/></svg></div><div class="n">01</div><h3>Training</h3><p>The right dose for the body you have now.</p></div>
+  <div class="lever reveal"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="3.5"/><path d="M2 5v5a2 2 0 0 0 2 2M4 5v14"/></svg></div><div class="n">02</div><h3>Nutrition</h3><p>Simple targets you'll actually keep.</p></div>
+  <div class="lever reveal"><div class="ic"><svg viewBox="0 0 24 24"><rect x="3" y="8.5" width="18" height="7" rx="3.5" transform="rotate(-35 12 12)"/><path d="M9.2 16 14.8 8"/></svg></div><div class="n">03</div><h3>Supplements</h3><p>Three to five that earn their place.</p></div>
+  <div class="lever reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v4l-4 9a3 3 0 0 0 2.7 4.3h6.6A3 3 0 0 0 18 16l-4-9V3"/><path d="M7.5 14h9"/></svg></div><div class="n">04</div><h3>Peptides</h3><p>Only if your plan calls for them. Exit plan included.</p></div>
+  <div class="lever reveal"><div class="ic"><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></div><div class="n">05</div><h3>Lifestyle</h3><p>Sleep, stress and alcohol. The inputs that decide the rest.</p></div>
+ </div>
+</div></section>
+
+<section id="how"><div class="wrap">
+ <div class="reveal">
+  <div class="kicker">How it works</div>
+  <h2>See what you <em>actually get.</em></h2>
+ </div>
+ <div class="tabs reveal" role="tablist">
+  <button class="tab on" data-p="0"><b>1</b>Your plan</button>
+  <button class="tab" data-p="1"><b>2</b>Training app</button>
+  <button class="tab" data-p="2"><b>3</b>Recovery tracking</button>
+  <button class="tab" data-p="3"><b>4</b>Weekly check-in</button>
+ </div>
+ <div class="panes reveal">
+  <div class="pane on">
+   <div><div class="when">First week</div><h3>A plan built from your intake</h3><p>Fill out the intake and your plan is built for you, down to the numbers: calories, protein, carbs and fats by phase, plus training, supplements and recovery. Then your coach walks you through it line by line.</p><div class="pts"><span>Training</span><span>Nutrition</span><span>Supplements</span><span>Recovery</span><span>Peptides if they fit</span></div></div>
+   <div class="shot"><div class="hd"><span>From a real member</span><span>Nutrition phases</span></div><img src="assets/plan-fuel.jpg" alt="Ikaria Method plan page showing two nutrition phases with calories, protein, carbs and fats" loading="lazy"></div>
+  </div>
+  <div class="pane">
+   <div><div class="when">Every day</div><h3>Your workouts, in your pocket</h3><p>Sessions built for your body and your schedule. Every exercise, tempo and rest period is laid out, and every set you log is saved.</p><div class="pts"><span>Custom program</span><span>Video demos</span><span>Rest timer</span><span>Every set logged</span></div></div>
+   <div class="phonewrap"><div class="plabel">From a real member · Training app</div><div class="phone"><img src="assets/app-workout.jpg" alt="An Ikaria training app workout with rest timer, sets, reps and weights" loading="lazy"></div></div>
+  </div>
+  <div class="pane">
+   <div><div class="when">As it happens</div><h3>Your recovery, on your coach's screen</h3><p>Connect your wearable and your coach gets a 7-day recap of your recovery, sleep, strain and HRV, so your plan adjusts to how you're really doing.</p><div class="pts"><span>Recovery</span><span>Sleep</span><span>Strain</span><span>HRV</span><span>Resting heart rate</span></div></div>
+   <div class="shot"><div class="hd"><span>From a real member</span><span>7-day recovery recap</span></div><img src="assets/sonar-recap.jpg" alt="Seven-day wearable recap showing recovery, sleep, strain, HRV, resting heart rate and time asleep" loading="lazy"></div>
+  </div>
+  <div class="pane">
+   <div><div class="when">Every week</div><h3>15 minutes that keep you on track</h3><p>A quick call and a written check-in from your coach: what moved, what didn't, and exactly what changes this week.</p><div class="pts"><span>15-minute call</span><span>Written check-in</span><span>Plan adjusted</span></div></div>
+   <div class="screen"><div class="hd"><span>Weekly check-in</span><span>Week 6</span></div>
+    <div class="msg"><b>Coach:</b> Sleep is up 48 minutes since week 1 and HRV keeps climbing. You're ready to push the main lift.</div>
+    <div class="msg me">Energy's been way better in the afternoons.</div>
+    <div class="msg"><b>This week:</b> add one zone 2 walk after dinner and keep lights out by 10:30.</div>
+   </div>
+  </div>
+ </div>
+ <p class="labsnote reveal"><b>Labs are optional.</b> Run a panel through us or your own doctor anytime, and your plan updates to match.</p>
+ <div class="arc reveal" id="arc">
+  <div><b>Weeks 1–4</b><span>Energy and sleep move first</span></div>
+  <div><b>Weeks 4–8</b><span>Recovery and drive come back</span></div>
+  <div><b>Weeks 8–12</b><span>Body composition catches up</span></div>
+ </div>
+</div></section>
+
+<section class="pricing" id="pricing"><div class="wrap">
+ <div class="reveal">
+  <div class="kicker">Membership</div>
+  <h2>One team. One plan. <em>One monthly price.</em></h2>
+  <p class="lede" style="margin-top:22px">Replace the guessing with one plan and a coach who watches it work.</p>
+ </div>
+ <div class="pcard reveal">
+  <div class="kicker" style="margin:0">The Ikaria Method</div>
+  <div class="price"><span class="amt">$297</span><span class="per">/ month</span></div>
+  <div class="micro" style="margin:0">Month-to-month. No long contract.</div>
+  <ul class="inc">
+   <li>Your personal plan and a review call</li>
+   <li>Custom training in the Ikaria app</li>
+   <li>Wearable recovery tracking</li>
+   <li>Weekly 15-minute call and written check-in</li>
+   <li>Plan updates, including when labs come in</li>
+   <li>Monitoring and an exit plan on every peptide</li>
+  </ul>
+  <a class="btn btn-teal" style="width:100%;justify-content:center" href="https://docs.google.com/forms/d/e/1FAIpQLSe1sn8xOR38fgH6sOSrqTQMSphRn0ha3F10_8V-ZQ7F0iPXSg/viewform" target="_blank" rel="noopener">Start your intake <span class="arr">→</span></a>
+  <div class="extra">Labs, peptides and prescriptions are separate and only added if your plan calls for them.</div>
+ </div>
+</div></section>
+
+<section class="compare"><div class="wrap">
+ <div class="reveal">
+  <div class="kicker">Why us</div>
+  <h2>Most options skip the part <em>that matters.</em></h2>
+ </div>
+ <div class="tscroll reveal"><table class="ctable">
+  <tr><th></th><th class="us">The Ikaria Method</th><th>Peptide shop</th><th>Telehealth clinic</th><th>Doing it yourself</th></tr>
+  <tr><td>Plan built around you</td><td class="us"><span class="y">●</span></td><td><span class="n">○</span></td><td>Sometimes</td><td><span class="n">○</span></td></tr>
+  <tr><td>Training, nutrition and lifestyle</td><td class="us"><span class="y">●</span></td><td><span class="n">○</span></td><td><span class="n">○</span></td><td>Guesswork</td></tr>
+  <tr><td>A coach every week</td><td class="us"><span class="y">●</span></td><td><span class="n">○</span></td><td><span class="n">○</span></td><td><span class="n">○</span></td></tr>
+  <tr><td>Recovery data reviewed</td><td class="us"><span class="y">●</span></td><td><span class="n">○</span></td><td><span class="n">○</span></td><td>On your own</td></tr>
+  <tr><td>Monitoring and an exit plan</td><td class="us"><span class="y">●</span></td><td><span class="n">○</span></td><td>Rarely</td><td><span class="n">○</span></td></tr>
+ </table></div>
+ <div class="trio2 reveal"><div><b>Built for you.</b> Never a template.</div><div><b>Monitoring</b> in every plan.</div><div><b>Exit plan</b> on every peptide.</div></div>
+</div></section>
+
+<section class="coaches" id="coaches" style="background:var(--sand)"><div class="wrap">
+ <div class="reveal">
+  <div class="kicker">Your coaches</div>
+  <h2>Real people reading <em>your numbers.</em></h2>
+ </div>
+ <div class="cgrid">
+  <div class="coach reveal"><img src="assets/coach-brad.jpg" alt="Brad Davidson"><div><h3>Brad Davidson</h3><div class="role">Co-Founder</div><p>Coach to athletes in the NFL, MLB, PGA, LIV Golf and NCAA. Author of The Stark Naked 21 Day Metabolic Reset and host of Your Ultimate Comeback.</p></div></div>
+  <div class="coach reveal"><img src="assets/coach-jay.jpg" alt="Jay Gonzales"><div><h3>Jay Gonzales</h3><div class="role">Co-Founder</div><p>Co-founder of The Ikaria Method and The Weight Room. Jay runs the operations that keep your coaching on track every week.</p></div></div>
+  <div class="coach reveal"><img src="assets/coach-alicia.jpg" alt="Alicia"><div><h3>Alicia</h3><div class="role">Ikaria Method Coach</div><p>Your coach week to week. Alicia reviews your data and runs your check-ins, so nothing drifts.</p></div></div>
+ </div>
+</div></section>
+
+<section class="faq" id="faq"><div class="wrap">
+ <div class="reveal" style="text-align:center">
+  <div class="kicker">Questions</div>
+  <h2>Before you <em>start.</em></h2>
+ </div>
+ <details><summary>Do I need bloodwork to start?</summary><p>No. Your plan is built from your intake. Labs are optional, and when you run them your plan updates to match.</p></details>
+ <details><summary>Will I be put on peptides?</summary><p>Only if they fit your plan, never as the first answer. If one makes sense, you get clear dosing, monitoring and an exit plan. Prescription options go through independent licensed clinicians.</p></details>
+ <details><summary>What does the $297 cover, and is there a contract?</summary><p>Your plan, review call, training app, wearable tracking, weekly calls and written check-ins, and plan updates. It's month-to-month. Labs, peptides and prescriptions are separate.</p></details>
+ <details><summary>Do I need a wearable, and where can I do this from?</summary><p>Most popular wearables connect, and you can start without one. Everything runs online, anywhere in the U.S.</p></details>
+ <details><summary>How soon will I notice something?</summary><p>Energy and sleep usually move first, often within the first month. Body composition typically takes 8 to 12 weeks.</p></details>
+</div></section>
+
+<section class="final"><div class="wrap reveal">
+ <div class="stamp2">Refuse to fade.</div>
+ <h2>Stop guessing. <em style="color:#fff">Start this week.</em></h2>
+ <p>Fill out your intake today. Your plan is built from it, and your coach walks you through it on your first call.</p>
+ <div class="ctas">
+  <a class="btn btn-light" href="https://docs.google.com/forms/d/e/1FAIpQLSe1sn8xOR38fgH6sOSrqTQMSphRn0ha3F10_8V-ZQ7F0iPXSg/viewform" target="_blank" rel="noopener">Start your intake <span class="arr">→</span></a>
+  <a class="btn btn-ghost" href="https://calendly.com/brad-braddavidson/ikaria-qualification-call" target="_blank" rel="noopener">Book a 15-minute call first</a>
+ </div>
+</div></section>
+
+<footer><div class="wrap">
+ <div class="top">
+  <div><img src="assets/logo-white.png" alt="The Ikaria Method"><div>Metabolic coaching for people who refuse to fade.</div></div>
+  <div><h4>Members</h4>
+   <a href="https://training.ikariamethod.com/login" target="_blank" rel="noopener">Training app login</a>
+   <a href="https://ikariamethod.com/glp-1-survival-guide/" target="_blank" rel="noopener">GLP-1 Survival Guide</a>
+   <a href="https://www.lyvcare.com/partners/ikaria" target="_blank" rel="noopener">Clinical partner: peptides, hormones and labs</a>
+  </div>
+  <div><h4>Contact</h4>
+   <a href="mailto:support@ikariamethod.com">support@ikariamethod.com</a>
+   <a href="https://calendly.com/brad-braddavidson/ikaria-qualification-call" target="_blank" rel="noopener">Book a call</a>
+   <a href="https://docs.google.com/forms/d/e/1FAIpQLSe1sn8xOR38fgH6sOSrqTQMSphRn0ha3F10_8V-ZQ7F0iPXSg/viewform" target="_blank" rel="noopener">Start your intake</a>
+  </div>
+ </div>
+ <div class="disc">The Ikaria Method is a coaching and education program offered by SJB Training, LLC d/b/a The Ikaria Method. It is not medical care and nothing on this site is medical advice. Any medical services, including prescriptions, are provided by independent licensed clinicians. Individual results vary. © 2026 The Ikaria Method.</div>
+</div></footer>
+
+<div class="mbar">
+ <a class="btn btn-teal" href="https://docs.google.com/forms/d/e/1FAIpQLSe1sn8xOR38fgH6sOSrqTQMSphRn0ha3F10_8V-ZQ7F0iPXSg/viewform" target="_blank" rel="noopener">Start your intake</a>
+ <a class="btn btn-ghost" href="#quiz">Take the quiz</a>
+</div>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);e.target.querySelectorAll&&e.target.querySelectorAll('.cnt').forEach(count)}}),{threshold:.12});
+document.querySelectorAll('.reveal,.arc').forEach(el=>io.observe(el));
+const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>10),{passive:true});
+function count(el){if(el.dataset.done)return;el.dataset.done=1;const to=+el.dataset.to,hm=el.dataset.fmt==='hm',t0=performance.now(),d=1600;
+ (function f(t){const k=Math.min(1,(t-t0)/d),e=1-Math.pow(1-k,3),v=to*e;
+  el.textContent=hm?Math.floor(v)+'h '+String(Math.round((v%1)*60)).padStart(2,'0')+'m':Math.round(v);if(k<1)requestAnimationFrame(f)})(t0)}
+// tabs
+const tabs=[...document.querySelectorAll('.tab')],panes=[...document.querySelectorAll('.pane')];
+tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>x.classList.remove('on'));panes.forEach(x=>x.classList.remove('on'));t.classList.add('on');panes[+t.dataset.p].classList.add('on')}));
+// quiz
+const INTAKE="https://docs.google.com/forms/d/e/1FAIpQLSe1sn8xOR38fgH6sOSrqTQMSphRn0ha3F10_8V-ZQ7F0iPXSg/viewform",CAL="https://calendly.com/brad-braddavidson/ikaria-qualification-call";
+const Q=[
+ {q:"When do you feel most drained?",o:[["Mid-afternoon, every day","energy"],["The day after I train","recovery"],["When I wake up","sleep"],["All the time, it's just lower","drive"]]},
+ {q:"How do you wake up most mornings?",o:[["Rested and ready","energy"],["Groggy, even after 7 or 8 hours","sleep"],["Sore and stiff","recovery"],["Wired at night, tired in the morning","stress"]]},
+ {q:"Where does stubborn body fat sit?",o:[["Around my middle","fat"],["Everywhere, it's all softer","drive"],["It's not the issue, energy is","energy"],["It moves, then comes right back","stress"]]},
+ {q:"What happens when you push harder in training?",o:[["I get worse, not better","recovery"],["I'm flat for days","recovery"],["Nothing changes","fat"],["I can't find the motivation","drive"]]},
+ {q:"What best describes your life right now?",o:[["High stress, not much downtime","stress"],["Short or broken sleep","sleep"],["Eating clean, scale won't move","fat"],["Just not myself lately","drive"]]}];
+const R={
+ energy:["Energy","Your fuel isn't reaching you when you need it. That afternoon crash is usually a fixable pattern, not your age.",["Rebuild your meals around protein and steady energy","Time your training to lift energy, not drain it","Find the inputs behind the crash, labs optional"]],
+ recovery:["Recovery","You're training harder than your body can currently recover from. More effort is digging the hole deeper.",["Set the right training dose for the body you have now","Track recovery on your wearable every week","Adjust the plan to how you're actually bouncing back"]],
+ sleep:["Sleep","Your sleep isn't restoring you. Until that changes, nothing else works as well as it should.",["A simple wind-down and lights-out routine","Track sleep quality, not just hours","Address what's breaking your sleep, step by step"]],
+ fat:["Stubborn body fat","You're doing the work, but your body is holding on. That points to a roadblock, not a willpower problem.",["Nutrition targets built for fat loss without starving","Training that builds muscle instead of just burning calories","Measure what's moving every week"]],
+ stress:["Stress load","Life, work and training are all drawing from one stress budget, and it's overdrawn.",["Cut the training that's costing more than it gives","Build recovery into your week on purpose","Coach the stress inputs, not just the workouts"]],
+ drive:["Drive","Energy, mood and drive have dipped together. That pattern deserves a closer look, not more caffeine.",["Fundamentals first: sleep, protein, strength training","Track how you feel each week, not just the numbers","Labs to see what's driving it, if you choose"]]};
+const box=document.getElementById('qz');let i=0,ans=[];
+function render(){if(i>=Q.length)return result();const q=Q[i];
+ box.innerHTML=`<div class="qbar"><i style="width:${i/Q.length*100}%"></i></div><div class="qstep"><div class="qmeta">Question ${i+1} of ${Q.length}</div><div class="qq">${q.q}</div><div class="qopts">${q.o.map((o,k)=>`<button class="qopt" data-k="${k}">${o[0]}</button>`).join('')}</div></div>${i?'<button class="qback">← Back</button>':''}`;
+ requestAnimationFrame(()=>box.querySelector('.qbar i').style.width=((i)/Q.length*100)+'%');
+ box.querySelectorAll('.qopt').forEach(b=>b.onclick=()=>{ans[i]=q.o[+b.dataset.k][1];i++;render()});
+ const bk=box.querySelector('.qback');if(bk)bk.onclick=()=>{i--;render()}}
+function result(){const c={};ans.forEach(a=>c[a]=(c[a]||0)+1);const top=Object.keys(c).sort((a,b)=>c[b]-c[a])[0];const r=R[top];
+ box.innerHTML=`<div class="qbar"><i style="width:100%"></i></div><div class="qres qstep"><div class="qmeta">Your biggest roadblock looks like</div><div class="big">${r[0]}</div><p>${r[1]}</p><div class="qmeta">What we'd do first</div><ul>${r[2].map(x=>`<li>${x}</li>`).join('')}</ul><div class="ctas"><a class="btn btn-teal" href="${INTAKE}" target="_blank" rel="noopener">Start your intake →</a><a class="btn btn-ghost" href="${CAL}" target="_blank" rel="noopener">Talk it through first</a></div><button class="again">Retake the quiz</button></div>`;
+ box.querySelector('.again').onclick=()=>{i=0;ans=[];render()}}
+render();
+</script>
+</body>
+</html>
